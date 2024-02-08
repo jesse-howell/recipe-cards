@@ -14,7 +14,12 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  await Recipe.bulkCreate(recipeData);
+  let newIngredients = JSON.stringify(recipeData.ingredients);
+  let newInstructions = JSON.stringify(recipeData.instructions);
+  recipeData.ingredients = newIngredients;
+  recipeData.instructions = newInstructions;
+  // await Recipe.bulkCreate(recipeData);
+  console.log(recipeData);
 
   process.exit(0);
 };
