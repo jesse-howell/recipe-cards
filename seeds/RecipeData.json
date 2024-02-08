@@ -1,0 +1,77 @@
+[
+    {
+      "id": "1",
+      "title": "French Toast",
+      "category": "",
+      "ingredients": [
+          "6 large eggs",
+          "1 1/2 cups heavy cream, half-and-half, or milk",
+          "2 tablespoons pure vanilla extract",
+          "1/2 teaspoons ground cinnamon",
+          "Pinch of ground nutmeg",
+          "Pinch of salt",
+          "6 slices bread",
+          "4 tablespoons unsalted butter",
+          "4 tablespoons vegitable oil",
+          "Your choice of syrup"
+          ],
+      "instructions":[
+        "Preheat oven to 250°F. Place a wire rack on a baking sheet, and set aside.",
+        "Whisk together eggs, cream, vanilla, cinnamon, nutmeg, and salt in a medium bowl; set aside.",
+        "Place bread in a shallow baking dish large enough to hold bread slices in a single layer.",
+        "Pour egg mixture over bread; soak 10 minutes. Turn slices over; soak until soaked through, about 10 minutes more.",
+        "Heat 2 tablespoons butter and 2 tablespoons vegetable oil in a skillet over medium heat. Fry half the bread slices until golden brown, 2 to 3 minutes per side. Transfer to wire rack and place in preheated oven while cooking remaining French Toast.",
+        "Wipe skillet, and repeat with remaining butter, oil, and bread.",
+        "Serve warm with pure maple syrup, if desired."
+          ],
+      "notes": "You can substitute the vegitable oil with butter.",
+      "source": "Martha Stewart's Kitchen",
+      "user id": ""
+    
+    },
+    {
+      "id": "",
+      "title": "",
+      "category": "",
+      "ingredients": "",
+      "instructions": "",
+      "notes": "",
+      "source": "",
+      "user id": ""
+
+    },
+    {
+      "id": "",
+      "title": "",
+      "category": "",
+      "ingredients": "",
+      "instructions": "",
+      "notes": "",
+      "source": "",
+      "user id": ""
+
+    },
+    {
+      "id": "",
+      "title": "",
+      "category": "",
+      "ingredients": "",
+      "instructions": "",
+      "notes": "",
+      "source": "",
+      "user id": ""
+
+    },
+    {
+      "id": "",
+      "title": "",
+      "category": "",
+      "ingredients": "",
+      "instructions": "",
+      "notes": "",
+      "source": "",
+      "user id": ""
+
+    }
+  ]
+  
