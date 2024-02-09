@@ -19,18 +19,6 @@ Recipe.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    ingredients: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    instructions: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    notes: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     source: {
       type: DataTypes.STRING,
       allowNull: false,
