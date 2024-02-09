@@ -1,4 +1,4 @@
-const categoryData = [
+[
     {
         "category_name": "Breakfast"
     },
@@ -14,9 +14,4 @@ const categoryData = [
     {
         "category_name": "Miscellaneous"
     }
-];
-
-
-const seedCategories = () => Category.bulkCreate(categoryData);
-
-module.exports = seedCategories;
+]
