@@ -12,7 +12,7 @@ const categoryData = [
         "category_name": "Desert"
     },
     {
-        "category_name": "Misc"
+        "category_name": "Miscellaneous"
     }
 ];
 

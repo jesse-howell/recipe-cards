@@ -7,13 +7,13 @@ const Note = require('./Note');
 // Ingredient belongsTo Recipe
 Ingredient.belongsTo(Recipe, {
     foreignKey: "recipeId",
-   // onDelete: "CASCADE",
+   onDelete: "CASCADE",
   });
 
   // Instruction belongsTo Recipe
 Instruction.belongsTo(Recipe, {
     foreignKey: "recipeId",
-   // onDelete: "CASCADE",
+    onDelete: "CASCADE",
   });
 
 // Notes belongsTo Reccipe
