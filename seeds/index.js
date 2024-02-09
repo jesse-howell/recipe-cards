@@ -14,10 +14,11 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  let newIngredients = JSON.stringify(recipeData.ingredients);
-  let newInstructions = JSON.stringify(recipeData.instructions);
-  recipeData.ingredients = newIngredients;
-  recipeData.instructions = newInstructions;
+  // stringify ingredients and instructions arrays before saving to the model
+  // let newIngredients = JSON.stringify(recipeData.ingredients);
+  // let newInstructions = JSON.stringify(recipeData.instructions);
+  // recipeData.ingredients = newIngredients;
+  // recipeData.instructions = newInstructions;
   // await Recipe.bulkCreate(recipeData);
   console.log(recipeData);
 
