@@ -1,27 +1,30 @@
 const sequelize = require('../config/connection');
-const { User } = require('../models');
-const { Recipe } = require('../models');
+const { User, Recipe, Instruction, Note, Ingredient } = require('../models');
+
 
 const userData = require('./userData.json');
 const recipeData = require('./recipeData.json');
+const ingredientData = require('./ingredientData.json');
+const instructionData = require('./instructionData.json');
+const noteData = require('./noteData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DB SEEDED -----');
+  await Recipe.bulkCreate(recipeData, {
+  });
+  await Ingredient.bulkCreate(ingredientData, {
+  });
+  await Instruction.bulkCreate(instructionData, {
+  });
+  await Note.bulkCreate(noteData, {
+  });
 
   await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
-
-  // stringify ingredients and instructions arrays before saving to the model
-  // let newIngredients = JSON.stringify(recipeData.ingredients);
-  // let newInstructions = JSON.stringify(recipeData.instructions);
-  // recipeData.ingredients = newIngredients;
-  // recipeData.instructions = newInstructions;
-  // await Recipe.bulkCreate(recipeData);
-  console.log(recipeData);
-
+ 
   process.exit(0);
 };
 

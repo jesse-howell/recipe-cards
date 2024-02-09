@@ -1,0 +1,22 @@
+const categoryData = [
+    {
+        "category_name": "Breakfast"
+    },
+    {
+        "category_name": "Lunch"
+    },
+    {
+        "category_name": "Dinner"
+    },
+    {
+        "category_name": "Desert"
+    },
+    {
+        "category_name": "Misc"
+    }
+];
+
+
+const seedCategories = () => Category.bulkCreate(categoryData);
+
+module.exports = seedCategories;
