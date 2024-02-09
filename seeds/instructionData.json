@@ -1,4 +1,74 @@
-[{
+[
+  {
     "text":  "Preheat oven to 250°F. Place a wire rack on a baking sheet, and set aside.",
     "recipeId": 1
-  }]
+  },
+  {
+    "text": "Whisk together eggs, cream, vanilla, cinnamon, nutmeg, and salt in a medium bowl; set aside.",
+    "recipeId": 1
+  },
+  {
+    "text": "Whisk together eggs, cream, vanilla, cinnamon, nutmeg, and salt in a medium bowl; set aside.",
+    "recipeId": 1
+  },
+  {
+    "text": "Place bread in a shallow baking dish large enough to hold bread slices in a single layer.",
+    "recipeId": 1
+  },
+  {
+    "text": "Pour egg mixture over bread; soak 10 minutes. Turn slices over; soak until soaked through, about 10 minutes more.",
+    "recipeId": 1
+  },
+  {
+    "text": "Heat 2 tablespoons butter and 2 tablespoons vegetable oil in a skillet over medium heat. Fry half the bread slices until golden brown, 2 to 3 minutes per side. Transfer to wire rack and place in preheated oven while cooking remaining French Toast.",
+    "recipeId": 1
+  },
+  {
+    "text": "Wipe skillet, and repeat with remaining butter, oil, and bread.",
+    "recipeId": 1
+  },
+  {
+    "text": "Serve warm with pure maple syrup, if desired.",
+    "recipeId": 1
+  },
+  {
+    "text": "In a large Dutch oven or pan over medium heat, brown the bacon.",
+    "recipeId": 2
+  },
+  {
+    "text": "When the bacon is about halfway browned add the chopped onion.",
+    "recipeId": 2
+  },
+  {
+    "text": "Cook until the bacon is browned and the onion is soft.",
+    "recipeId": 2
+  },
+  {
+    "text": "Add the garlic and cook for 1 minute, stirring constantly.",
+    "recipeId": 2
+  },
+  {
+    "text": "Serve warm with pure maple syrup, if desired.",
+    "recipeId": 2
+  },
+  {
+    "text": "Add the collard greens and cook until wilted and slightly softened.",
+    "recipeId": 2
+  },
+  {
+    "text":  "Add the chicken broth, apple cider vinegar, sugar, Cajun seasoning, paprika, and crushed red pepper.",
+    "recipeId": 2
+  },
+  {
+    "text": "Cover and simmer for 45-60 minutes, letting the liquid cook down and the greens really soften.",
+    "recipeId": 2
+  },
+  {
+    "text": "Drain most of the liquid or use a slotted spoon to remove it.",
+    "recipeId": 2
+  },
+  {
+    "text": "Salt and pepper to taste.",
+    "recipeId": 2
+  }
+]
