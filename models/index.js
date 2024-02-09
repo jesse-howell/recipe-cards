@@ -3,6 +3,7 @@ const Recipe = require('./Recipe');
 const Ingredient = require('./Ingredient');
 const Instruction = require('./Instruction');
 const Note = require('./Note');
+const Tag = require('./Tag');
 
 // Ingredient belongsTo Recipe
 Ingredient.belongsTo(Recipe, {
@@ -19,10 +20,14 @@ Instruction.belongsTo(Recipe, {
 // Notes belongsTo Reccipe
 Note.belongsTo(Recipe, {
     foreignKey: "recipeId",
-   // onDelete: "CASCADE",
+    onDelete: "CASCADE",
   });
 
-
+// Tag belongsTo Reccipe
+Tag.belongsTo(Recipe, {
+  foreignKey: "recipeId",
+  onDelete: "CASCADE",
+});
 
   
   // Recipe have many ingredients
@@ -38,6 +43,10 @@ Note.belongsTo(Recipe, {
     foreignKey: "recipeId",
   });
 
+// Recipe have many tags
+Recipe.hasMany(Tag, {
+  foreignKey: "recipeId",
+});
 
   
 module.exports = { 
@@ -46,5 +55,6 @@ module.exports = {
     Ingredient,
     Instruction,
     Note,
+    Tag,
 };
 
