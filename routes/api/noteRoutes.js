@@ -12,4 +12,4 @@ const router = require('express').Router();
 
 // router.delete
 
-// module.exports = router;
+module.exports = router;
