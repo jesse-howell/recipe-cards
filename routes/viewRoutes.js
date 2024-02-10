@@ -19,9 +19,6 @@ router.get('/createuser', (req, res) => {
 
 
 
-
-
-
 router.get('/createrecipe', (req, res) => {
   res.render('createreceipe');
 });
