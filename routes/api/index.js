@@ -1,27 +1,20 @@
+//require consts for each route.js file
 const router = require('express').Router();
+const ingredientRoutes = require('./ingredientRoutes');
+const instructionRoutes = require('./instructionRoutes');
+const noteRoutes = require('./noteRoutes');
+const recipeRoutes = require('./recipeRoutes');
+const tagRoutes = require('./tagRoutes');
 const userRoutes = require('./userRoutes');
 
-const userRoutes = require('./ingredientRoutes');
 
-const userRoutes = require('./noteRoutes');
-
-const userRoutes = require('./recipeRoutes');
-
-const userRoutes = require('./userRoutes');
-// create one for each route - recipes, ingredients, instructions, notes
-// const = require('./');
-// const = require('./');
-// const = require('./');
-// const = require('./');
-
+//path definition for api directories
+router.use('/users', ingredientRoutes);
+router.use('/users', instructionRoutes);
+router.use('/users', noteRoutes);
+router.use('/users', recipeRoutes);
+router.use('/users', tagRoutes);
 router.use('/users', userRoutes);
-// // recipe route
-// router.use('/', );
-// // ingredient route
-// router.use('/', );
-// // instruction route
-// router.use('/', );
-// // note route
-// router.use('/', );
+
 
 module.exports = router;
