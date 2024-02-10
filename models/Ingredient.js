@@ -1,11 +1,10 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-// test - reverted name to User.js
-class Recipe extends Model {}
 
+class Ingredient extends Model {}
 
-//Set up Recipe model (table)
-Recipe.init(
+// Set up Ingredient model (table)
+Ingredient.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,24 +12,14 @@ Recipe.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    text: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    category: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    source: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    // user id as fk
-    user_id: {
+    recipeId: {
       type: DataTypes.INTEGER,
-      // foreign key references user(id)
       references: {
-        model: "users",
+        model: "recipes",
         key: "id",
       },
     },
@@ -38,8 +27,8 @@ Recipe.init(
   {
     sequelize,
     timestamps: false,
-    modelName: "recipe",
+    modelName: "ingredient",
   }
 );
 
-module.exports = Recipe;
+module.exports = Ingredient;
