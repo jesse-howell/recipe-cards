@@ -14,6 +14,8 @@ const tagData = require("./tagData.json");
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
   console.log("\n----- DB SEEDED -----");
+    // testing for err issue
+    console.log(recipeData);
   await Recipe.bulkCreate(recipeData, {});
   await Ingredient.bulkCreate(ingredientData, {});
   await Instruction.bulkCreate(instructionData, {});

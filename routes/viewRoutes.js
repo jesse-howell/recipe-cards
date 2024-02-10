@@ -8,11 +8,11 @@ router.get('/', async (req, res) => {
 });
 
 
-
+// login page will be integrated into homepage w/ sep pg for create user
 //login page
-router.get('/login', (req, res) => {
-  res.render('login');
-});
+// router.get('/login', (req, res) => {
+//   res.render('login');
+// });
 
 
 
