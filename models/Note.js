@@ -1,8 +1,9 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
- 
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
+
 class Note extends Model {}
 
+//Set up Note model (table)
 Note.init(
   {
     id: {
@@ -18,15 +19,15 @@ Note.init(
     recipeId: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'recipes',
-        key: 'id',
+        model: "recipes",
+        key: "id",
       },
     },
-      },
+  },
   {
     sequelize,
     timestamps: false,
-    modelName: 'note',
+    modelName: "note",
   }
 );
 

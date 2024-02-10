@@ -2,49 +2,43 @@
   {
     "title": "French Toast",
     "category": "Breakfast",
-    "source":"Martha Stewart's Kitchen",
+    "source": "Martha Stewart's Kitchen",
     "id": 1,
     "user_id": 1
-
   },
   {
     "title": "Southern Collard Greens ",
     "category": "Dinner",
-    "source":"Mom's Recipe",
+    "source": "Mom's Recipe",
     "id": 2,
     "user_id": 1
-
   },
   {
     "title": "Chickpea, Avocado and Feta Salad",
     "category": "Lunch",
-    "source":"Pinterest",
+    "source": "Pinterest",
     "id": 3,
     "user_id": 1
-
   },
   {
     "title": "Cheesy Chorizo Dip",
     "category": "Miscellaneous",
-    "source":"oliviascuisine.com",
+    "source": "oliviascuisine.com",
     "id": 4,
     "user_id": 1
-
   },
   {
     "title": "Slow Cooker Pulled Pork",
     "category": "Dinner",
-    "source":"Tammy's Recipe",
+    "source": "Tammy's Recipe",
     "id": 5,
     "user_id": 1
-
   },
   {
     "title": "Southern Sweet Potato Casserole",
     "category": "Desert",
-    "source":"unknown",
+    "source": "Unknown",
     "id": 6,
     "user_id": 1
-
   }
 ]
