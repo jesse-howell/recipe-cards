@@ -1,5 +1,13 @@
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
+
+const userRoutes = require('./ingredientRoutes');
+
+const userRoutes = require('./noteRoutes');
+
+const userRoutes = require('./recipeRoutes');
+
+const userRoutes = require('./userRoutes');
 // create one for each route - recipes, ingredients, instructions, notes
 // const = require('./');
 // const = require('./');
