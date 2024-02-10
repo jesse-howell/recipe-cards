@@ -13,7 +13,7 @@ Instruction.init(
       autoIncrement: true,
     },
     text: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     recipeId: {
