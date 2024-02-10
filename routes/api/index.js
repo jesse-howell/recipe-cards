@@ -9,12 +9,12 @@ const userRoutes = require('./userRoutes');
 
 
 //path definition for api directories
-router.use('/users', ingredientRoutes);
-router.use('/users', instructionRoutes);
-router.use('/users', noteRoutes);
-router.use('/users', recipeRoutes);
-router.use('/users', tagRoutes);
-router.use('/users', userRoutes);
+router.use('/ingredients', ingredientRoutes);
+router.use('/instructions', instructionRoutes);
+router.use('/notes', noteRoutes);
+router.use('/recipes', recipeRoutes);
+router.use('/tags', tagRoutes);
+router.use('/user', userRoutes);
 
 
 module.exports = router;
