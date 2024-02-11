@@ -2,6 +2,7 @@
 
 //require consts for each route.js file
 const router = require('express').Router();
+const categoryRoutes = require('./categoryRoutes');
 const ingredientRoutes = require('./ingredientRoutes');
 const instructionRoutes = require('./instructionRoutes');
 const noteRoutes = require('./noteRoutes');
