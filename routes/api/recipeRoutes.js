@@ -23,18 +23,20 @@ router.get("/", async (req, res) => {
           model:Instruction
           //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
         },
-        {
-          model:Category
-          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-        },
+
+        //Category model reference commented out until we have model association setup
         // {
-        //   model:Note
+        //   model:Category
         //   //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
         // },
-        // {
-        //   model:Tag
-        //   //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-        // }
+        {
+          model:Note
+          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+        },
+        {
+          model:Tag
+          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+        }
   ]});
     const recipes = recipeData.map((recipe) =>
       recipe.get({ plain: true })
