@@ -16,11 +16,26 @@ router.get("/", async (req, res) => {
     const recipeData = await Recipe.findAll({ 
       include:[
         {
-          model:Ingredient, Instruction, Category, Note, Tag
-        }
+          model:Ingredient
+          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+        },
+        {
+          model:Instruction
+          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+        },
+        {
+          model:Category
+          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+        },
+        {
+          model:Note
+          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+        },
+        {
+          model:Tag
+          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+        },
   ]});
-    // const recipeData = await Recipe.findAll({ include: [Ingredient, Instruction, Category, Note, Tag]});
-
     const recipes = recipeData.map((recipe) =>
       recipe.get({ plain: true })
     );
