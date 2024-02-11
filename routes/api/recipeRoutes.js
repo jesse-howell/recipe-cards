@@ -12,16 +12,38 @@ const {
 
 // find all -> recipes, including its associated Ingredients,Instructions, Notes and Tag data
 router.get("/", async (req, res) => {
-  Recipe.findAll({ include: [Ingredient, Instruction, Category, Note, Tag] })
-    .then((recipes) => {
-      res.json(recipes);
-    })
-    .catch((err) => {
-      res.status(500).json({
-        message: "Error finding recipes",
-        error: err,
-      });
-    });
+  try {
+    const recipeData = await Recipe.findAll({ 
+      include:[
+        {
+          model:Ingredient, Instruction, Category, Note, Tag
+        }
+  ]});
+    // const recipeData = await Recipe.findAll({ include: [Ingredient, Instruction, Category, Note, Tag]});
+
+    const recipes = recipeData.map((recipe) =>
+      recipe.get({ plain: true })
+    );
+
+    // res.render('homepage', {
+    //   floors,
+    // });
+    res.status(200).json(recipes)
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+
+  // Recipe.findAll({ include: [Ingredient, Instruction, Category, Note, Tag] })
+  //   .then((recipes) => {
+  //     res.json(recipes);
+  //   })
+  //   .catch((err) => {
+  //     res.status(500).json({
+  //       message: "Error finding recipes",
+  //       error: err,
+  //     });
+  //   });
 });
 
 // find a single -> recipe by its `id`, including its its associated Category and Tag data not sure if id should be title

@@ -12,6 +12,7 @@ const userRoutes = require('./userRoutes');
 
 
 //path definition for api directories
+router.use('/category', categoryRoutes);
 router.use('/ingredient', ingredientRoutes);
 router.use('/instruction', instructionRoutes);
 router.use('/note', noteRoutes);
