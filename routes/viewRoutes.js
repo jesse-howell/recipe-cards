@@ -7,10 +7,10 @@ router.get("/", async (req, res) => {
 });
 
 // login page will be integrated into homepage w/ sep pg for create user
-//login page
-// router.get('/login', (req, res) => {
-//   res.render('login');
-// });
+// login page
+router.get('/login', (req, res) => {
+  res.render('login');
+});
 
 //will be for creating a user initially (still needs a .handlebars file created in views)
 router.get("/createuser", (req, res) => {
