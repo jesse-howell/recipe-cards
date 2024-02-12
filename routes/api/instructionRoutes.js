@@ -1,15 +1,47 @@
-const router = require('express').Router();
-// need to import Instruction Model and any related to it
-// const
+const router = require("express").Router();
+const {
+  Recipe,
+  Ingredient,
+  Instruction,
+  Note,
+  Category,
+  Tag,
+} = require("../../models");
 
-// router.get
+//Push/Post/Delete Options:
 
-// router.get
+// create new -> instruction
+router.post("/", async (req, res) => {
+  try {
+    const instruction = await Instruction.create(req.body);
+    return res.status(200).json(instruction);
+  } catch (err) {
+    console.log(err);
+    return res.status(500).json(err);
+  }
+});
 
-// router.post
+// delete -> instruction
+// I used the async/await syntax for this block of code
+router.delete("/:id", async (req, res) => {
+  try {
+    const instructionData = await Instruction.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
 
-// router.put
+    if (!instructionData) {
+      res.status(404).json({ message: "Instruction not found." }); // if user messed up it's 404
+      return;
+    }
 
-// router.delete
+    res.status(200).json({ message: "Instruction deleted" }); // 200 means all good
+  } catch (err) {
+    if (err) {
+      res.status(500).json(err); // if server messed up its a 500
+    }
+  }
+});
 
-// module.exports = router;
+module.exports = router;

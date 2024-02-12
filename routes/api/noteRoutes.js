@@ -1,15 +1,47 @@
-const router = require('express').Router();
-// need to import Note Model and any related to it
-// const 
+const router = require("express").Router();
+const {
+  Recipe,
+  Ingredient,
+  Instruction,
+  Note,
+  Category,
+  Tag,
+} = require("../../models");
 
-// router.get
+//Push/Post/Delete Options:
 
-// router.get
+// create new -> note
+router.post("/", async (req, res) => {
+  try {
+    const note = await Note.create(req.body);
+    return res.status(200).json(note);
+  } catch (err) {
+    console.log(err);
+    return res.status(500).json(err);
+  }
+});
 
-// router.post
+// delete -> note
+// I used the async/await syntax for this block of code
+router.delete("/:id", async (req, res) => {
+  try {
+    const NoteData = await Note.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
 
-// router.put
+    if (!NoteData) {
+      res.status(404).json({ message: "Note not found." }); // if user messed up it's 404
+      return;
+    }
 
-// router.delete
+    res.status(200).json({ message: "Note deleted" }); // 200 means all good
+  } catch (err) {
+    if (err) {
+      res.status(500).json(err); // if server messed up its a 500
+    }
+  }
+});
 
-// module.exports = router;
+module.exports = router;

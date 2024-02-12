@@ -1,19 +1,22 @@
-const router = require('express').Router();
-const userRoutes = require('./userRoutes');
-// create one for each route - recipes, ingredients, instructions, notes
-// const = require('./');
-// const = require('./');
-// const = require('./');
-// const = require('./');
+// commented out tags route bc it is empty 
 
-router.use('/users', userRoutes);
-// // recipe route
-// router.use('/', );
-// // ingredient route
-// router.use('/', );
-// // instruction route
-// router.use('/', );
-// // note route
-// router.use('/', );
+//require consts for each route.js file
+const router = require('express').Router();
+const ingredientRoutes = require('./ingredientRoutes');
+const instructionRoutes = require('./instructionRoutes');
+const noteRoutes = require('./noteRoutes');
+const recipeRoutes = require('./recipeRoutes');
+// const tagRoutes = require('./tagRoutes');
+const userRoutes = require('./userRoutes');
+
+
+//path definition for api directories
+router.use('/ingredient', ingredientRoutes);
+router.use('/instruction', instructionRoutes);
+router.use('/note', noteRoutes);
+router.use('/recipe', recipeRoutes);
+// router.use('/tag', tagRoutes);
+router.use('/user', userRoutes);
+
 
 module.exports = router;
