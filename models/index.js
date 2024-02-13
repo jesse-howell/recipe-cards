@@ -5,15 +5,15 @@ const Recipe = require("./Recipe");
 //======================we need to correlate User with their recipes (by session??? xD)=========================
 
 // Notes belongsTo Reccipe
-// Note.belongsTo(Recipe, {
-//   foreignKey: "recipeId",
-//   onDelete: "CASCADE",
-// });
+Recipe.belongsTo(User, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
+});
 
 // Recipe have many notes
-// Recipe.hasMany(Note, {
-//   foreignKey: "recipeId",
-// });
+User.hasMany(Recipe, {
+  foreignKey: "user_id",
+});
 
 
 module.exports = {
