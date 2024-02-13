@@ -2,6 +2,8 @@ const User = require("./User");
 const Recipe = require("./Recipe");
 
 
+//======================we need to correlate User with their recipes (by session??? xD)=========================
+
 // Notes belongsTo Reccipe
 // Note.belongsTo(Recipe, {
 //   foreignKey: "recipeId",
