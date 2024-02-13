@@ -33,10 +33,10 @@ router.get("/", async (req, res) => {
           model:Note
           //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
         },
-        {
-          model:Tag
-          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-        }
+        // {
+        //   model:Tag
+        //   //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+        // }
   ]});
     const recipes = recipeData.map((recipe) =>
       recipe.get({ plain: true })
@@ -74,10 +74,10 @@ router.get("/:id", async (req, res) => {
             model:Note
             //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
           },
-          {
-            model:Tag
-            //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-          }
+          // {
+          //   model:Tag
+          //   //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
+          // }
     ]});
       const recipe = recipeData.get({ plain: true });
       res.status(200).json(recipe)
@@ -107,26 +107,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// update -> recipe
-router.put("/:id", async (req, res) => {
-  try {
-    const recipe = await Recipe.findByPk(req.params.id, {
-      include: [Tag],
-    });
-    // update recipe data
-    recipe.update(req.body);
-    // if there are recipe tags, we create pairings by using the setTags method
-    if (req.body.tagIds) {
-      await recipe.setTags(req.body.tagIds);
-    }
-    await recipe.save();
-    await recipe.reload();
-    return res.status(200).json(recipe);
-  } catch (err) {
-    console.log(err);
-    return res.status(500).json(err);
-  }
-});
+
 
 // delete -> recipe
 // I used the async/await syntax for this block of code
