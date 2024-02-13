@@ -56,6 +56,7 @@ router.post("/", async (req, res) => {
 
 // delete -> recipe
 // I used the async/await syntax for this block of code
+// route = api/recipe/#
 router.delete("/:id", async (req, res) => {
   try {
     const recipeData = await Recipe.destroy({
