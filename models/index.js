@@ -24,11 +24,12 @@ Note.belongsTo(Recipe, {
   onDelete: "CASCADE",
 });
 
-// Tag belongsTo Reccipe
-Tag.belongsTo(Recipe, {
-  foreignKey: "recipeId",
-  onDelete: "CASCADE",
-});
+// not using Tag 
+// Tag belongsTo Recipe
+// Tag.belongsTo(Recipe, {
+//   foreignKey: "recipeId",
+//   onDelete: "CASCADE",
+// });
 
 // Recipe have many ingredients
 Recipe.hasMany(Ingredient, {
