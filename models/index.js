@@ -3,7 +3,8 @@ const Recipe = require("./Recipe");
 const Ingredient = require("./Ingredient");
 const Instruction = require("./Instruction");
 const Note = require("./Note");
-const Tag = require("./Tag");
+// doing away w/ Tag for now
+// const Tag = require("./Tag");
 
 // Ingredient belongsTo Recipe
 Ingredient.belongsTo(Recipe, {
@@ -33,19 +34,22 @@ Tag.belongsTo(Recipe, {
 Recipe.hasMany(Ingredient, {
   foreignKey: "recipeId",
 });
+
 // Recipe have many instructions
 Recipe.hasMany(Instruction, {
   foreignKey: "recipeId",
 });
+
 // Recipe have many notes
 Recipe.hasMany(Note, {
   foreignKey: "recipeId",
 });
 
+// doing away with tags - not enough time to complete/too complex
 // Recipe have many tags
-Recipe.hasMany(Tag, {
-  foreignKey: "recipeId",
-});
+// Recipe.hasMany(Tag, {
+//   foreignKey: "recipeId",
+// });
 
 module.exports = {
   User,
@@ -53,5 +57,5 @@ module.exports = {
   Ingredient,
   Instruction,
   Note,
-  Tag,
+  // Tag,
 };
