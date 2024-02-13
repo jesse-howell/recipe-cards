@@ -1,50 +1,50 @@
 [
   {
     "title": "French Toast",
-    "ingredients": "Breakfast",
+    "ingredients": "6 large eggs, 1 1/2 cups heavy cream, half-and-half, or milk, 2 tablespoons pure vanilla extract, 1/2 teaspoons ground cinnamon, Pinch of ground nutmeg, Pinch of salt, 6 slices bread, 4 tablespoons unsalted butter, 4 tablespoons vegitable oil, Your choice of syrup,",
     "instructions": "Breakfast",
     "note": "Breakfast",
     "source": "Martha Stewart's Kitchen",
     "id": 1
   },
   {
-    "title": "French Toast",
-    "ingredients": "Breakfast",
+    "title": "Southern Collard Greens",
+    "ingredients": "8 slices bacon chopped, 1 medium onion finely chopped, 3 cloves garlic, 1 lb collard greens washed trimmed, and cut, 3 cups chicken broth enough to cover the greens, 1 1/2 teaspoons apple cider vinegar, 1 tablespoon sugar, ½ teaspoon cajun seasoning, ¼ teaspoon smoked paprika, ¼ teaspoon crushed red pepper, Salt and pepper to taste,",
     "instructions": "Breakfast",
     "note": "Breakfast",
     "source": "Martha Stewart's Kitchen",
-    "id": 1
+    "id": 2
   },
   {
-    "title": "French Toast",
+    "title": "Chickpea, Avocado and Feta Salad",
     "ingredients": "Breakfast",
     "instructions": "Breakfast",
     "note": "Breakfast",
     "source": "Martha Stewart's Kitchen",
-    "id": 1
+    "id": 3
   },
   {
-    "title": "French Toast",
+    "title": "Cheesy Chorizo Dip",
     "ingredients": "Breakfast",
     "instructions": "Breakfast",
     "note": "Breakfast",
     "source": "Martha Stewart's Kitchen",
-    "id": 1
+    "id": 4
   },
   {
-    "title": "French Toast",
+    "title": "Slow Cooker Pulled Pork",
     "ingredients": "Breakfast",
     "instructions": "Breakfast",
     "note": "Breakfast",
     "source": "Martha Stewart's Kitchen",
-    "id": 1
+    "id": 5
   },
   {
-    "title": "French Toast",
+    "title": "Southern Sweet Potato Casserole",
     "ingredients": "Breakfast",
     "instructions": "Breakfast",
     "note": "Breakfast",
     "source": "Martha Stewart's Kitchen",
-    "id": 1
+    "id": 6
   }
 ]
