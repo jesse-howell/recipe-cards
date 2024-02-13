@@ -5,7 +5,8 @@ const {
   Recipe,
   Instruction,
   Note,
-  Tag,
+  // not using Tag
+  // Tag,
   Ingredient,
 } = require("../models");
 
@@ -14,7 +15,8 @@ const recipeData = require("./recipeData.json");
 const ingredientData = require("./ingredientData.json");
 const instructionData = require("./instructionData.json");
 const noteData = require("./noteData.json");
-const tagData = require("./tagData.json");
+// not using Tag
+// const tagData = require("./tagData.json");
 
 // To seed the db in the correct order, had to create recipe before before the others.
 const seedDatabase = async () => {
@@ -26,6 +28,7 @@ const seedDatabase = async () => {
   await Ingredient.bulkCreate(ingredientData, {});
   await Instruction.bulkCreate(instructionData, {});
   await Note.bulkCreate(noteData, {});
+  // not using Tag rn
   // await Tag.bulkCreate(tagData, {});
   await User.bulkCreate(userData, {
     individualHooks: true,
