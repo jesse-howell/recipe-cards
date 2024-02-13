@@ -26,7 +26,7 @@ const seedDatabase = async () => {
   await Ingredient.bulkCreate(ingredientData, {});
   await Instruction.bulkCreate(instructionData, {});
   await Note.bulkCreate(noteData, {});
-  await Tag.bulkCreate(tagData, {});
+  // await Tag.bulkCreate(tagData, {});
   await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
