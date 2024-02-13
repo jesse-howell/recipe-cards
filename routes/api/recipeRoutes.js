@@ -1,11 +1,6 @@
 const router = require("express").Router();
 const {
   Recipe,
-  Ingredient,
-  Instruction,
-  Note,
-  Category,
-  Tag,
 } = require("../../models");
 
 ///Find Options:
@@ -13,31 +8,7 @@ const {
 // find all -> recipes, including its associated Ingredients,Instructions, Notes and Tag data
 router.get("/", async (req, res) => {
   try {
-    const recipeData = await Recipe.findAll({ 
-      include:[
-        {
-          model:Ingredient
-          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-        },
-        {
-          model:Instruction
-          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-        },
-
-        //Category model reference commented out until we have model association setup
-        // {
-        //   model:Category
-        //   //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-        // },
-        {
-          model:Note
-          //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-        },
-        // {
-        //   model:Tag
-        //   //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-        // }
-  ]});
+    const recipeData = await Recipe.findAll({});
     const recipes = recipeData.map((recipe) =>
       recipe.get({ plain: true })
     );
