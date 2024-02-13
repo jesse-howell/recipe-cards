@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
       recipe.get({ plain: true })
     );
 
-
+  // 
     res.status(200).json(recipes)
   } catch (err) {
     console.log(err);
