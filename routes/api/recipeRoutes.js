@@ -6,6 +6,7 @@ const {
 ///Find Options:
 
 // find all -> recipes, including its associated Ingredients,Instructions, Notes and Tag data
+// route = api/recipe
 router.get("/", async (req, res) => {
   try {
     const recipeData = await Recipe.findAll({});
@@ -23,11 +24,12 @@ router.get("/", async (req, res) => {
 });
 
 // find a single -> recipe by its `id`, including its its associated Category and Tag data not sure if id should be title
+// route = api/recipe/#
 router.get("/:id", async (req, res) => {
     try {
       const recipeData = await Recipe.findByPk(req.params.id, {});
       const recipe = recipeData.get({ plain: true });
-      
+
       res.status(200).json(recipe)
     } catch (err) {
       console.log(err);
@@ -38,6 +40,7 @@ router.get("/:id", async (req, res) => {
 //Push/Post/Delete Options:
 
 // create new -> recipe
+// route = api/recipe
 router.post("/", async (req, res) => {
   try {
     const recipe = await Recipe.create(req.body);
