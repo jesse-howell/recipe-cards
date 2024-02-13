@@ -44,13 +44,7 @@ router.get("/:id", async (req, res) => {
 router.post("/", async (req, res) => {
   try {
     const recipe = await Recipe.create(req.body);
-    // if there are recipe tags, we create pairings by using the setTags method
-    if (req.body.tagIds) {
-      await recipe.setTags(req.body.tagIds);
-      await recipe.save();
-      return res.status(200).json(await recipe.getTags());
-    }
-    // if no recipe tags, respond
+
     return res.status(200).json(recipe);
   } catch (err) {
     console.log(err);
