@@ -1,38 +1,50 @@
 [
   {
     "title": "French Toast",
-    "category": "Breakfast",
+    "ingredients": "Breakfast",
+    "instructions": "Breakfast",
+    "note": "Breakfast",
     "source": "Martha Stewart's Kitchen",
     "id": 1
   },
   {
-    "title": "Southern Collard Greens ",
-    "category": "Dinner",
-    "source": "Mom's Recipe",
-    "id": 2
+    "title": "French Toast",
+    "ingredients": "Breakfast",
+    "instructions": "Breakfast",
+    "note": "Breakfast",
+    "source": "Martha Stewart's Kitchen",
+    "id": 1
   },
   {
-    "title": "Chickpea, Avocado and Feta Salad",
-    "category": "Lunch",
-    "source": "Pinterest",
-    "id": 3
+    "title": "French Toast",
+    "ingredients": "Breakfast",
+    "instructions": "Breakfast",
+    "note": "Breakfast",
+    "source": "Martha Stewart's Kitchen",
+    "id": 1
   },
   {
-    "title": "Cheesy Chorizo Dip",
-    "category": "Miscellaneous",
-    "source": "oliviascuisine.com",
-    "id": 4
+    "title": "French Toast",
+    "ingredients": "Breakfast",
+    "instructions": "Breakfast",
+    "note": "Breakfast",
+    "source": "Martha Stewart's Kitchen",
+    "id": 1
   },
   {
-    "title": "Slow Cooker Pulled Pork",
-    "category": "Dinner",
-    "source": "Tammy's Recipe",
-    "id": 5
+    "title": "French Toast",
+    "ingredients": "Breakfast",
+    "instructions": "Breakfast",
+    "note": "Breakfast",
+    "source": "Martha Stewart's Kitchen",
+    "id": 1
   },
   {
-    "title": "Southern Sweet Potato Casserole",
-    "category": "Desert",
-    "source": "Unknown",
-    "id": 6
+    "title": "French Toast",
+    "ingredients": "Breakfast",
+    "instructions": "Breakfast",
+    "note": "Breakfast",
+    "source": "Martha Stewart's Kitchen",
+    "id": 1
   }
 ]
