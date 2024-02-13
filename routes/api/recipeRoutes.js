@@ -25,32 +25,9 @@ router.get("/", async (req, res) => {
 // find a single -> recipe by its `id`, including its its associated Category and Tag data not sure if id should be title
 router.get("/:id", async (req, res) => {
     try {
-      const recipeData = await Recipe.findByPk(req.params.id, { 
-        include:[
-          {
-            model:Ingredient
-            //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-          },
-          {
-            model:Instruction
-            //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-          },
-  
-          //Category model reference commented out until we have model association setup
-          // {
-          //   model:Category
-          //   //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-          // },
-          {
-            model:Note
-            //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-          },
-          // {
-          //   model:Tag
-          //   //attribute:[whatever table columns we want to specify..IF any. Otherwise leave blank]
-          // }
-    ]});
+      const recipeData = await Recipe.findByPk(req.params.id, {});
       const recipe = recipeData.get({ plain: true });
+      
       res.status(200).json(recipe)
     } catch (err) {
       console.log(err);
