@@ -30,3 +30,11 @@ a {
   color: #407088; 
   
 }
+
+#button {
+  background-color: #407088;  
+}
+
+nav li a {
+  padding: 30px;
+}
