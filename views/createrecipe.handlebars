@@ -9,7 +9,7 @@
   <form class="new-recipe-form" action="/api/recipe" method="POST">
     {{!-- title --}}
     <label for="recipe_title">
-      Title:
+      title:
     </label>
     <br />
     <textarea id="recipe_title" name="recipe_title" rows="2" cols="30">
@@ -18,7 +18,7 @@
     <br />
     {{!-- ingredients --}}
     <label for="recipe_ingredients">
-      Ingredients:
+      ingredients:
     </label>
     <br />
     <textarea id="recipe_ingredients" name="recipe_ingredients" rows="6" cols="30">
@@ -27,7 +27,7 @@
     <br />
     {{!-- instructions --}}
     <label for="recipe_instructions">
-      Instructions:
+      instructions:
     </label>
     <br />
     <textarea id="recipe_instructions" name="recipe_instructions" rows="6" cols="30">
@@ -36,23 +36,23 @@
     <br />
     {{!-- notes --}}
     <label for="recipe_note">
-      Notes:
+      notes:
     </label>
     <br />
     <textarea id="recipe_note" name="recipe_note" rows="4" cols="30">
       {{recipe_note}}
     <br />
     {{!-- source --}}
-      <label for="recipe_source">
-      Ingredients:
+    <label for="recipe_source">
+      source:
     </label>
     <br />
     <textarea id="recipe_source" name="recipe_source" rows="2" cols="30">
       {{recipe_source}}
     </textarea>
     <br />
-     <button type="submit" value="create">
-      create
-    </button> 
+    <button type="submit" value="create">
+      add recipe to collection.
+    </button>
   </form>
 </div>
