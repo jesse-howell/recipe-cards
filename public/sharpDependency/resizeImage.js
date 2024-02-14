@@ -2,12 +2,12 @@ const sharp = require("sharp");
 
 async function resizeImage() {
   try {
-    await sharp("sammy.png")
+    await sharp("yourimg.png")
       .resize({
         width: 150,
-        height: 97
+        height: 125
       })
-      .toFile("sammy-resized.png");
+      .toFile("yourimg-resized.png");
   } catch (error) {
     console.log(error);
   }
