@@ -24,8 +24,15 @@ router.get("/createrecipe", (req, res) => {
 });
 
 //your recipe page
-router.get("/yourrecipes", (req, res) => {
-  res.render("yourrecipes");
+router.get("/yourrecipes", async (req, res) => {
+  
+  const recipeData = await Recipe.findAll({});
+  const recipes = recipeData.map((recipe) =>
+    recipe.get({ plain: true })
+  );
+
+
+  res.render("yourrecipes", {recipes});
 });
 
 router.get("/logout", (req, res) => {
