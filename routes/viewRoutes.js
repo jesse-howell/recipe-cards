@@ -8,8 +8,8 @@ router.get("/", async (req, res) => {
 
 // login page will be integrated into homepage w/ sep pg for create user
 // login page
-router.get('/login', (req, res) => {
-  res.render('login');
+router.get("/login", (req, res) => {
+  res.render("login");
 });
 
 //will be for creating a user initially (still needs a .handlebars file created in views)
@@ -31,7 +31,7 @@ router.get("/yourrecipes", (req, res) => {
 router.get("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
-      res.status(204).redirect('/homepage');
+      res.status(204).redirect("/homepage");
     });
   } else {
     res.status(404).end();
