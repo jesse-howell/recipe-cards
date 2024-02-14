@@ -12,7 +12,7 @@ Jesse - https://github.com/jesse-howell
 Daymen - https://github.com/DaymenPasick    
 
 ## Technology Used
-This web application follows proper MVC file and directory structure formating. Sequelize, mysql2, express, dotenv, and bcrypt are dependencies that allow this application to run. It also employs the use of handlebars.js and the Bootswatch Lux theme in order to render templated webpages and give them a polished look.
+This web application follows proper MVC file and directory structure formating. Sequelize, mysql2, express, dotenv, and bcrypt are dependencies that allow this application to run. It also employs the use of handlebars.js and Pico CSS in order to render templated webpages and give them a polished look.
 
 ## Screenshots
 
