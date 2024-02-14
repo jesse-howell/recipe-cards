@@ -1,33 +1,59 @@
-<header>
-  <h2>create recipe.</h2>
-</header>
-<div>
+{{!-- <div class="card-header col-md-10"> --}}
+  <header>
+    <h2>create recipe.</h2>
+  </header>
+  {{!--
+</div> --}}
+<div class="create-recipe-container">
   {{!-- the btn will post everything included below into the content card; renders recipe card w/ info --}}
-  <form class="new-recipe-form" action="/api/recipeRoutes" method="POST">
+  <form class="new-recipe-form" action="/api/recipe" method="POST">
     {{!-- title --}}
     <label for="recipe_title">
       Title:
     </label>
     <br />
+    <textarea id="recipe_title" name="recipe_title" rows="2" cols="30">
+      {{recipe_title}}
+    </textarea>
+    <br />
     {{!-- ingredients --}}
-    <div class="recipe-form">
-      <input type="submit" value="" />
-    </div>
+    <label for="recipe_ingredients">
+      Ingredients:
+    </label>
+    <br />
+    <textarea id="recipe_ingredients" name="recipe_ingredients" rows="6" cols="30">
+      {{recipe_ingredients}}
+    </textarea>
+    <br />
     {{!-- instructions --}}
-    <div class="recipe-form">
-      <input type="submit" value="" />
-    </div>
-    {{!-- category --}}
-    <div class="recipe-form">
-      <input type="submit" value="" />
-    </div>
-    {{!-- source --}}
-    <div class="recipe-form">
-      <input type="submit" value="" />
-    </div>
+    <label for="recipe_instructions">
+      Instructions:
+    </label>
+    <br />
+    <textarea id="recipe_instructions" name="recipe_instructions" rows="6" cols="30">
+      {{recipe_instructions}}
+    </textarea>
+    <br />
     {{!-- notes --}}
-    <div class="recipe-form">
-      <input type="submit" value="" />
-    </div>
+    <label for="recipe_note">
+      Notes:
+    </label>
+    <br />
+    <textarea id="recipe_note" name="recipe_note" rows="4" cols="30">
+      {{recipe_note}}
+    <br />
+    {{!-- source --}}
+      <label for="recipe_source">
+      Ingredients:
+    </label>
+    <br />
+    <textarea id="recipe_source" name="recipe_source" rows="2" cols="30">
+      {{recipe_source}}
+    </textarea>
+    <br />
+    {{!-- gotta come back and find a way to create script for what will happen if create button is clicked?? --}}
+    {{!-- <button type="submit" value="create">
+      create
+    </button> --}}
   </form>
 </div>
