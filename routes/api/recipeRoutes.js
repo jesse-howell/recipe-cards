@@ -50,8 +50,8 @@ router.post("/", async (req, res) => {
       note: req.body.note,
       source: req.body.source,
     });
-
-    return res.status(200).json(recipe);
+    res.redirect('/yourrecipes');
+    // return res.status(200).json(recipe);
   } catch (err) {
     console.log(req.body);
     return res.status(500).json(err);
