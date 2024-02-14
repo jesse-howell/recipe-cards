@@ -1,9 +1,6 @@
-{{!-- <div class="card-header col-md-10"> --}}
-  <header>
-    <h2>create recipe.</h2>
-  </header>
-  {{!--
-</div> --}}
+<header>
+  <h2>create recipe.</h2>
+</header>
 <div class="create-recipe-container">
   {{!-- the btn will post everything included below into the content card; renders recipe card w/ info --}}
   <form class="new-recipe-form" action="/api/recipe" method="POST">
@@ -12,45 +9,35 @@
       title:
     </label>
     <br />
-    <textarea id="recipe_title" name="recipe_title" rows="1" cols="30">
-      {{recipe_title}}
-    </textarea>
+    <textarea id="recipe_title" name="recipe_title" rows="2" cols="30">{{recipe_title}}</textarea>
     <br />
     {{!-- ingredients --}}
     <label for="recipe_ingredients">
       ingredients:
     </label>
     <br />
-    <textarea id="recipe_ingredients" name="recipe_ingredients" rows="4" cols="30">
-      {{recipe_ingredients}}
-    </textarea>
+    <textarea id="recipe_ingredients" name="recipe_ingredients" rows="6" cols="30">{{recipe_ingredients}}</textarea>
     <br />
     {{!-- instructions --}}
     <label for="recipe_instructions">
       instructions:
     </label>
     <br />
-    <textarea id="recipe_instructions" name="recipe_instructions" rows="5" cols="30">
-      {{recipe_instructions}}
-    </textarea>
+    <textarea id="recipe_instructions" name="recipe_instructions" rows="6" cols="30">{{recipe_instructions}}</textarea>
     <br />
     {{!-- notes --}}
     <label for="recipe_note">
       notes:
     </label>
     <br />
-    <textarea id="recipe_note" name="recipe_note" rows="2" cols="30">
-      {{recipe_note}}
-    </textarea>
+    <textarea id="recipe_note" name="recipe_note" rows="4" cols="30">{{recipe_note}}</textarea>
     <br />
     {{!-- source --}}
     <label for="recipe_source">
       source:
     </label>
     <br />
-    <textarea id="recipe_source" name="recipe_source" rows="1" cols="30">
-      {{recipe_source}}
-    </textarea>
+    <textarea id="recipe_source" name="recipe_source" rows="2" cols="30">{{recipe_source}}</textarea>
     <br />
     <button type="submit" value="create">
       add recipe to collection.
