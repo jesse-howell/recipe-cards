@@ -43,11 +43,17 @@ router.get("/:id", async (req, res) => {
 // route = api/recipe
 router.post("/", async (req, res) => {
   try {
-    const recipe = await Recipe.create(req.body);
+    const recipe = await Recipe.create({
+      title: req.body.title,
+      ingredients: req.body.ingredients,
+      instructions: req.body.instructions,
+      note: req.body.note,
+      source: req.body.source,
+    });
 
     return res.status(200).json(recipe);
   } catch (err) {
-    console.log(err);
+    console.log(req.body);
     return res.status(500).json(err);
   }
 });
