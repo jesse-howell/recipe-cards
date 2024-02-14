@@ -1,38 +1,18 @@
 [
   {
     "title": "French Toast",
-    "category": "Breakfast",
+    "ingredients": "6 large eggs, 1 1/2 cups heavy cream, half-and-half, or milk, 2 tablespoons pure vanilla extract, 1/2 teaspoons ground cinnamon, Pinch of ground nutmeg, Pinch of salt, 6 slices bread, 4 tablespoons unsalted butter, 4 tablespoons vegitable oil, Your choice of syrup,",
+    "instructions": "1)Preheat oven to 250°F. Place a wire rack on a baking sheet, and set aside. 2)Whisk together eggs, cream, vanilla, cinnamon, nutmeg, and salt in a medium bowl; set aside. 3) Place bread in a shallow baking dish large enough to hold bread slices in a single layer. 4)Pour egg mixture over bread; soak 10 minutes. Turn slices over; soak until soaked through, about 10 minutes more. 5)Heat 2 tablespoons butter and 2 tablespoons vegetable oil in a skillet over medium heat. Fry half the bread slices until golden brown, 2 to 3 minutes per side. Transfer to wire rack and place in preheated oven while cooking remaining French Toast. 6) Wipe skillet, and repeat with remaining butter, oil, and bread.  ",
+    "note": "You can substitute the vegitable oil with butter.",
     "source": "Martha Stewart's Kitchen",
     "id": 1
   },
   {
-    "title": "Southern Collard Greens ",
-    "category": "Dinner",
+    "title": "Southern Collard Greens",
+    "ingredients": "8 slices bacon chopped, 1 medium onion finely chopped, 3 cloves garlic, 1 lb collard greens washed trimmed, and cut, 3 cups chicken broth enough to cover the greens, 1 1/2 teaspoons apple cider vinegar, 1 tablespoon sugar, ½ teaspoon cajun seasoning, ¼ teaspoon smoked paprika, ¼ teaspoon crushed red pepper, Salt and pepper to taste,",
+    "instructions": "1) In a large Dutch oven or pan over medium heat, brown the bacon. 2)When the bacon is about halfway browned add the chopped onion. 3)Cook until the bacon is browned and the onion is soft. 4)Add the garlic and cook for 1 minute, stirring constantly. 5)Add the collard greens and cook until wilted and slightly softened. 6)Add the chicken broth, apple cider vinegar, sugar, Cajun seasoning, paprika, and crushed red pepper. 7)Cover and simmer for 45-60 minutes, letting the liquid cook down and the greens really soften. 8)Drain most of the liquid or use a slotted spoon to remove it. 9) Salt and pepper to taste.",
+    "note": "Breakfast",
     "source": "Mom's Recipe",
     "id": 2
-  },
-  {
-    "title": "Chickpea, Avocado and Feta Salad",
-    "category": "Lunch",
-    "source": "Pinterest",
-    "id": 3
-  },
-  {
-    "title": "Cheesy Chorizo Dip",
-    "category": "Miscellaneous",
-    "source": "oliviascuisine.com",
-    "id": 4
-  },
-  {
-    "title": "Slow Cooker Pulled Pork",
-    "category": "Dinner",
-    "source": "Tammy's Recipe",
-    "id": 5
-  },
-  {
-    "title": "Southern Sweet Potato Casserole",
-    "category": "Desert",
-    "source": "Unknown",
-    "id": 6
   }
 ]
