@@ -34,7 +34,7 @@ router.get("/yourrecipes", async (req, res) => {
         where: { user_id: req.session.user_id },
       });
       const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
-      console.log('RECIPES', recipes);
+      console.log("RECIPES", recipes);
       res.render("yourrecipes", { recipes });
     } catch (err) {
       console.error(err);

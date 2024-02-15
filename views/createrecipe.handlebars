@@ -2,37 +2,47 @@
   <h2>create recipe.</h2>
 </header>
 <div class="create-recipe-container">
-  {{!-- the btn will post everything included below into the content card; renders recipe card w/ info --}}
+  {{! the btn will post everything included below into the content card; renders recipe card w/ info }}
   <form class="new-recipe-form" action="/api/recipe" method="POST">
-    {{!-- title --}}
+    {{! title }}
     <label for="recipe_title">
       title:
     </label>
     <br />
     <textarea id="title" name="title" rows="2" cols="30">{{title}}</textarea>
     <br />
-    {{!-- ingredients --}}
+    {{! ingredients }}
     <label for="ingredients">
       ingredients:
     </label>
     <br />
-    <textarea id="ingredients" name="ingredients" rows="6" cols="30">{{ingredients}}</textarea>
+    <textarea
+      id="ingredients"
+      name="ingredients"
+      rows="6"
+      cols="30"
+    >{{ingredients}}</textarea>
     <br />
-    {{!-- instructions --}}
+    {{! instructions }}
     <label for="instructions">
       instructions:
     </label>
     <br />
-    <textarea id="instructions" name="instructions" rows="6" cols="30">{{instructions}}</textarea>
+    <textarea
+      id="instructions"
+      name="instructions"
+      rows="6"
+      cols="30"
+    >{{instructions}}</textarea>
     <br />
-    {{!-- notes --}}
+    {{! notes }}
     <label for="note">
       notes:
     </label>
     <br />
     <textarea id="note" name="note" rows="4" cols="30">{{note}}</textarea>
     <br />
-    {{!-- source --}}
+    {{! source }}
     <label for="source">
       source:
     </label>
