@@ -49,6 +49,7 @@ router.post("/", async (req, res) => {
       instructions: req.body.instructions,
       note: req.body.note,
       source: req.body.source,
+      user_id: req.session.user_id,
     });
     res.redirect('/yourrecipes');
     // return res.status(200).json(recipe);

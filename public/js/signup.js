@@ -12,7 +12,7 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/yourrecipes');
+        document.location.replace('/createrecipe');
       } else {
         alert('Failed to log in');
       }

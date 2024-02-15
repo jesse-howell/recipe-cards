@@ -15,11 +15,12 @@ const seedDatabase = async () => {
   console.log("\n----- DB SEEDED -----");
   // testing for err issue
   console.log(recipeData);
-  await Recipe.bulkCreate(recipeData, {});
   await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
+  await Recipe.bulkCreate(recipeData, {});
+
 
   process.exit(0);
 };

@@ -25,14 +25,22 @@ router.get("/createrecipe", (req, res) => {
 
 //your recipe page
 router.get("/yourrecipes", async (req, res) => {
-  console.log
-  const recipeData = await Recipe.findAll({});
-  const recipes = recipeData.map((recipe) =>
-    recipe.get({ plain: true })
-  );
-
-
-  res.render("yourrecipes", {recipes});
+  console.log(req.session.loggedIn);
+  if (!req.session.loggedIn) {
+    return res.render("yourrecipes");
+  } else {
+    try {
+      const recipeData = await Recipe.findAll({
+        where: { user_id: req.session.user_id },
+      });
+      const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
+      console.log('RECIPES', recipes);
+      res.render("yourrecipes", { recipes });
+    } catch (err) {
+      console.error(err);
+      res.status(500).json(err);
+    }
+  }
 });
 
 router.get("/logout", (req, res) => {
