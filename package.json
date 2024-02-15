@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "launch": "npm install && npm run watch",
-    "prestart": "node config/init",
     "start": "node server.js",
     "seed": "node seeds/index",
     "watch": "nodemon server.js"

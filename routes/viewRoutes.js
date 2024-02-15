@@ -25,7 +25,7 @@ router.get("/createrecipe", (req, res) => {
 
 //your recipe page
 router.get("/yourrecipes", async (req, res) => {
-  
+  console.log
   const recipeData = await Recipe.findAll({});
   const recipes = recipeData.map((recipe) =>
     recipe.get({ plain: true })
