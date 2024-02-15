@@ -1,15 +1,22 @@
-<header>
-  <h2>create account.</h2>
-    <form action="" method="get" class="create-account-form"></form>
-      <div class="create-account-form">
-        <label for="username">please enter a username. </label>
-        <input type="text" name="name" id="name" placeholder="username" />
+<h2>create account.</h2>
+<form class="form signup-form">
+   <div class="form-group">
+    <label for="name-signup">name:</label>
+    <input class="form-input" type="text" id="name-signup" />
   </div>
-  <div class="create-account-form">
-      <label for="password">please enter a password. </label>
-      <input type="text" name="password" id="password" placeholder="password" />
+  <div class="form-group">
+    <label for="email-signup">email:</label>
+    <input class="form-input" type="text" id="email-signup" />
   </div>
-  <div class="login-form">
-    <input type="submit" value="create account" id="button" />
+  <div class="form-group">
+    <label for="password-signup">password:</label>
+    <input class="form-input" type="password" id="password-signup" />
   </div>
-</header>
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit" id="button">signup</button>
+  </div>
+</form>
+
+<script src="/js/signup.js"></script>
+
+
