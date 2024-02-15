@@ -39,9 +39,12 @@ nav {
   padding: 30px;
   flex-direction: row;
   align-content: space-around;
-  padding: auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
+
 
 .img {
   justify-content: center;
