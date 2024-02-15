@@ -6,7 +6,7 @@ const {
 } = require("../models");
 
 const userData = require("./userData.json");
-const recipeData = require("./recipeData.json");
+const recipeData = require("./RecipeData.json");
 
 
 // To seed the db in the correct order, had to create recipe before before the others.
