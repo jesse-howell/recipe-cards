@@ -23,7 +23,7 @@ This web application follows proper MVC file and directory structure formating. 
 
 [Deployed Application](https://meringue-202e9f100dd7.herokuapp.com/)
 
-[marthastewart.com](https://www.marthastewart.com/)
+[marthastewart.com](https://www.marthastewart.com/333918/classic-french-toast)
 
 ## License
 None
