@@ -19,8 +19,10 @@ This web application follows proper MVC file and directory structure formating. 
 
 
 ## Links
-[GitHub URL](https://github.com/jesse-howell/recipe-cards)   
+[GitHub URL](https://github.com/jesse-howell/recipe-cards)
+
 [Deployed Application](https://meringue-202e9f100dd7.herokuapp.com/)
+
 [marthastewart.com](https://www.marthastewart.com/)
 
 ## License
