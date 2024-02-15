@@ -5,7 +5,7 @@ async function resizeImage() {
     await sharp("yourimg.png")
       .resize({
         width: 150,
-        height: 125
+        height: 125,
       })
       .toFile("yourimg-resized.png");
   } catch (error) {

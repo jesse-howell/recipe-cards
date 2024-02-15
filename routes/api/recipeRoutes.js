@@ -1,7 +1,5 @@
 const router = require("express").Router();
-const {
-  Recipe,
-} = require("../../models");
+const { Recipe } = require("../../models");
 
 ///Find Options:
 
@@ -10,31 +8,28 @@ const {
 router.get("/", async (req, res) => {
   try {
     const recipeData = await Recipe.findAll({});
-    const recipes = recipeData.map((recipe) =>
-      recipe.get({ plain: true })
-    );
+    const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
 
-  // 
-    res.status(200).json(recipes)
+    //
+    res.status(200).json(recipes);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
-
 });
 
 // find a single -> recipe by its `id`, including its its associated Category and Tag data not sure if id should be title
 // route = api/recipe/#
 router.get("/:id", async (req, res) => {
-    try {
-      const recipeData = await Recipe.findByPk(req.params.id, {});
-      const recipe = recipeData.get({ plain: true });
+  try {
+    const recipeData = await Recipe.findByPk(req.params.id, {});
+    const recipe = recipeData.get({ plain: true });
 
-      res.status(200).json(recipe)
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
+    res.status(200).json(recipe);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 });
 
 //Push/Post/Delete Options:
@@ -51,15 +46,13 @@ router.post("/", async (req, res) => {
       source: req.body.source,
       user_id: req.session.user_id,
     });
-    res.redirect('/yourrecipes');
+    res.redirect("/yourrecipes");
     // return res.status(200).json(recipe);
   } catch (err) {
     console.log(req.body);
     return res.status(500).json(err);
   }
 });
-
-
 
 // delete -> recipe
 // I used the async/await syntax for this block of code
