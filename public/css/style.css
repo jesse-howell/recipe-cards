@@ -35,6 +35,17 @@ a {
   background-color: #407088;  
 }
 
-nav li a {
+nav {
   padding: 30px;
+  flex-direction: row;
+  align-content: space-around;
+  padding: auto;
+  text-align: center;
+}
+
+.img {
+  justify-content: center;
+  align-content: space-around;
+  padding: auto;
+  display: flex
 }
